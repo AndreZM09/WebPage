@@ -7,7 +7,7 @@
     --color-base2: #022a30;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
-    --sidebar-width: 270px;
+    --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
 
@@ -52,7 +52,7 @@ img {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
 }
 
 .shadow-effect {
@@ -75,7 +75,6 @@ img {
 }
 
 /* NAVBAR */
-
 .navbar {
     background-color: var(--color-base);
 }
@@ -97,8 +96,8 @@ img {
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
-        width: var(--sidebar-width);
-        background: linear-gradient(rgba(3, 66, 74, 0.8),rgba(3, 65, 73, 0.8)),url(../images/sidebar-img.jpg);
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -107,13 +106,13 @@ img {
         border: 8px solid var(--color-brand);
     }
 
-    /* Content wrapper */
+    /* CONTENT WRAPPER */
     #content-wrapper {
-        padding-left: var(--sidebar-width);
+        padding-left: var(--sidbar-width);
     }
 }
 
-/* Btn */
+/* BTN */
 .btn {
     padding: 12px 28px;
     font-weight: 700;
@@ -135,7 +134,6 @@ img {
 .link-custom {
     font-weight: 700;
     position: relative;
-    color: #fff;
 }
 
 .link-custom::after {
@@ -153,16 +151,20 @@ img {
     width: 100%;
 }
 
-/* Card */
-.card-custom .card-custom-image{
+/* CARD */
+.card-custom .card-custom-image {
     overflow: hidden;
 }
 
-.card-custom .card-custom-image img{
+.card-custom .card-custom-image img {
     transition: all 0.4s ease;
 }
 
-/* Contact */
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
 #contact .form-control {
     background-color: var(--color-base);
     border-color: var(--color-base);
@@ -182,8 +184,8 @@ img {
     height: 44px;
 }
 
-/* Social icons */
-.social.icons {
+/* SOCIAL ICONS */
+.social-icons {
 
 }
 
@@ -197,4 +199,3 @@ img {
     border-radius: 100px;
     font-size: 24px;
 }
-
